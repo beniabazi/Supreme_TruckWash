@@ -1,31 +1,36 @@
-/* General Page Styling */
-html,
-body,
-header,
-#intro {
+/* ==========================
+   1️⃣ General Page Styling
+========================== */
+html, body, header, #intro {
   font-family: 'Roboto', sans-serif;
 }
 
-
-/* Navbar Background */
+/* ==========================
+ 2️⃣ Navbar Styles
+========================== */
 .navbar {
-  background-color: #003366 !important; /* Dark blue background */
+  background-color: #003366; /* Dark blue background */
   padding: 10px 0; /* Reduce unnecessary height */
+}
+
+/* Navbar Collapse Styling */
+.top-nav-collapse {
+  background-color: #2b5080;
 }
 
 /* Navbar Brand (Logo) */
 .navbar-brand img {
-  max-height: 40px; /* Ensures the logo is properly scaled */
+  max-height: 40px; /* Ensures logo scales properly */
 }
 
-/* Centering Navbar Links */
+/* Center Navbar Links */
 .navbar-nav {
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-/* Social Media Icons */
+/* Social Media Icons (Visible on Desktop) */
 .navbar-icons a {
   color: white;
   font-size: 18px;
@@ -37,27 +42,18 @@ header,
   color: #ffcc00; /* Highlight color on hover */
 }
 
-/* Navbar Toggler */
+/* Navbar Toggler (Hamburger Menu) */
 .navbar-toggler {
   border: none;
   outline: none;
 }
 
-/* Hero Section Background */
-
-/* Navbar Styling */
-.top-nav-collapse {
-  background-color: #2b5080;
-}
-/* Change the background color of the navbar */
-.navbar {
-  background-color: #1f5081 !important; /* Change this color as needed */
-}
-
-/* Hero Section Styles */
+/* ==========================
+ 3️⃣ Hero Section
+========================== */
 .hero-section {
   position: relative;
-  height: 100vh; /* Full screen height */
+  height: 100vh;
   background: url('/img/truck_wash1.png') no-repeat center center/cover;
   display: flex;
   align-items: center;
@@ -66,14 +62,14 @@ header,
   color: white;
 }
 
-/* Dark overlay for better contrast */
+/* Dark overlay for contrast */
 .hero-overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.6); /* Dark overlay */
+  background: rgba(0, 0, 0, 0.6);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -81,14 +77,13 @@ header,
   padding: 20px;
 }
 
-/* Logo styling */
+/* Hero Elements */
 .hero-logo {
   max-width: 400px;
   margin-bottom: 20px;
   animation: fadeInDown 1.5s ease-in-out;
 }
 
-/* Hero Title */
 .hero-title {
   font-size: 2.8rem;
   font-weight: bold;
@@ -96,7 +91,6 @@ header,
   animation: fadeInUp 1.5s ease-in-out;
 }
 
-/* Hero Subtitle */
 .hero-subtitle {
   font-size: 1.5rem;
   font-style: italic;
@@ -121,8 +115,10 @@ header,
   transform: scale(1.1);
 }
 
-/* Section Styling */
-.why-choose-us {
+/* ==========================
+ 4️⃣ Section Styling
+========================== */
+.why-choose-us, .services, .contact-section {
   background-color: #f8f9fa;
   padding: 80px 0;
 }
@@ -135,7 +131,7 @@ header,
 }
 
 .section-title .highlight {
-  color: #ffcc00; /* Highlight color */
+  color: #ffcc00;
 }
 
 /* Section Subtitle */
@@ -145,8 +141,10 @@ header,
   margin-bottom: 30px;
 }
 
-/* Feature Box Styling */
-.feature-box {
+/* ==========================
+ 5️⃣ Feature & Service Boxes
+========================== */
+.feature-box, .service-box, .contact-box {
   background: white;
   padding: 25px;
   border-radius: 10px;
@@ -154,152 +152,25 @@ header,
   transition: transform 0.3s ease-in-out;
 }
 
-.feature-box:hover {
-  transform: translateY(-5px);
-}
-
-/* Feature Icons */
-.feature-icon {
-  font-size: 40px;
-  color: #003366; /* Dark Blue */
-  margin-bottom: 15px;
-}
-
-/* Feature Box Title */
-.feature-box h4 {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Feature Box Text */
-.feature-box p {
-  color: #666;
-  font-size: 1rem;
-}
-
-/* Services Section */
-.services {
-  background-color: #f8f9fa; /* Light background */
-  padding: 80px 0;
-}
-
-/* Section Title */
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.section-title .highlight {
-  color: #ffcc00; /* Highlight color */
-}
-
-/* Section Subtitle */
-.section-subtitle {
-  font-size: 1.3rem;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-/* Service Box */
-.service-box {
-  background: white;
-  padding: 30px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-}
-
-.service-box:hover {
+.feature-box:hover, .service-box:hover {
   transform: translateY(-5px);
   box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
 
-/* Service Icons */
-.service-icon {
-  font-size: 50px;
-  color: #003366; /* Dark Blue */
+.feature-icon, .service-icon, .contact-icon {
+  font-size: 40px;
+  color: #003366;
   margin-bottom: 15px;
 }
 
-/* Service Title */
-.service-box h4 {
-  font-size: 1.4rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-/* Service Description */
-.service-box p {
-  color: #666;
-  font-size: 1rem;
-}
-
-/* Contact Section */
-.contact-section {
-  background-color: #f8f9fa;
-  padding: 80px 0;
-}
-
-/* Section Title */
-.section-title {
-  font-size: 2.5rem;
-  font-weight: bold;
-  margin-bottom: 10px;
-}
-
-.section-title .highlight {
-  color: #ffcc00; /* Highlight color */
-}
-
-/* Section Subtitle */
-.section-subtitle {
-  font-size: 1.2rem;
-  color: #555;
-  margin-bottom: 30px;
-}
-
-/* Contact Info Box */
-.contact-info {
-  text-align: center;
-}
-
-.contact-box {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
-}
-
-.contact-box a {
-  text-decoration: none;
-  color: #003366;
-  font-weight: bold;
-}
-
-.contact-box a:hover {
-  color: #ffcc00;
-}
-
-/* Contact Icons */
-.contact-icon {
-  font-size: 30px;
-  color: #003366;
-  margin-bottom: 10px;
-}
-
-/* Contact Form */
+/* ==========================
+ 6️⃣ Contact Form
+========================== */
 .contact-form {
   background: white;
   padding: 30px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
-.contact-form .form-group {
-  margin-bottom: 15px;
 }
 
 .contact-form input,
@@ -327,8 +198,89 @@ header,
   color: black;
 }
 
+/* ==========================
+ 7️⃣ Responsive Design
+========================== */
+/* Mobile View - Adjustments */
+@media (max-width: 992px) {
+  .navbar {
+      padding: 5px 0;
+  }
 
-/* Animations */
+  .navbar-brand img {
+      max-height: 35px;
+  }
+
+  .navbar-nav {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  /* Hide social icons in the top navbar */
+  .navbar-icons {
+      display: none !important;
+  }
+
+  /* Show social icons inside the dropdown */
+  .mobile-social-icons {
+      display: flex !important;
+      justify-content: center;
+      gap: 15px;
+      padding-top: 10px;
+  }
+
+  .mobile-social-icons a {
+      font-size: 20px;
+      color: #ffffff !important;
+      transition: color 0.3s ease-in-out;
+  }
+
+  .mobile-social-icons a:hover {
+      color: #ffcc00 !important;
+  }
+}
+
+/* Hero Section - Adjust Height for Mobile */
+@media (max-width: 768px) {
+  .hero-section {
+      height: 60vh;
+      padding: 40px 20px;
+  }
+
+  .hero-title {
+      font-size: 2rem;
+  }
+
+  .hero-subtitle {
+      font-size: 1.2rem;
+  }
+
+  .hero-btn {
+      padding: 10px 25px;
+      font-size: 1rem;
+  }
+
+  .hero-logo {
+      max-width: 250px;
+  }
+}
+
+/* Adjust Footer for Small Screens */
+@media (max-width: 768px) {
+  footer {
+      text-align: center;
+      padding: 20px;
+  }
+
+  footer a {
+      display: block;
+      margin-bottom: 5px;
+  }
+}
+
+/* ==========================
+ 8️⃣ Animations
+========================== */
 @keyframes fadeInUp {
   from { opacity: 0; transform: translateY(30px); }
   to { opacity: 1; transform: translateY(0); }
@@ -343,215 +295,3 @@ header,
   from { opacity: 0; }
   to { opacity: 1; }
 }
-
-/* Buttons */
-.btn-primary {
-  background-color: #1E3A5F;
-  border-color: #1E3A5F;
-}
-
-.btn-primary:hover {
-  background-color: #162B47;
-  border-color: #162B47;
-}
-
-/* Footer */
-footer {
-  background-color: #162B47;
-  color: white;
-  padding: 20px 0;
-}
-
-footer a {
-  color: #4DA8DA;
-}
-
-footer a:hover {
-  color: #FFFFFF;
-  text-decoration: none;
-}
-
-
-/* Responsive Navbar */
-@media (max-width: 992px) {
-  .navbar {
-    padding: 5px 0; /* Reduce navbar height on smaller screens */
-  }
-
-  .navbar-brand img {
-    max-height: 35px; /* Adjust logo size for mobile */
-  }
-
-  .navbar-nav {
-    flex-direction: column; /* Stack menu items vertically on smaller screens */
-    text-align: center;
-  }
-
-  .navbar-icons {
-    margin-top: 10px; /* Add spacing between nav links and social icons */
-  }
-}
-
-/* Hero Section - Adjust Height for Smaller Screens */
-@media (max-width: 768px) {
-  .hero-section {
-    height: 60vh; /* Reduce height for mobile */
-    padding: 40px 20px;
-  }
-
-  .hero-title {
-    font-size: 2rem;
-  }
-
-  .hero-subtitle {
-    font-size: 1.2rem;
-  }
-
-  .hero-btn {
-    padding: 10px 25px;
-    font-size: 1rem;
-  }
-
-  .hero-logo {
-    max-width: 250px; /* Reduce logo size */
-  }
-}
-
-/* Hide social icons on mobile & tablets */
-@media (max-width: 992px) {
-  .navbar-icons {
-    display: none !important;
-  }
-}
-
-/* Move hamburger menu to the right */
-.navbar-toggler {
-  border: none;
-  outline: none;
-  position: relative;
-}
-
-/* Ensure proper alignment on mobile */
-@media (max-width: 992px) {
-  .navbar .container {
-    display: flex;
-    justify-content: space-between; /* Ensures proper spacing */
-  }
-
-  .navbar-toggler {
-    margin-left: auto; /* Pushes to the right */
-  }
-}
-
-/* Navbar Styling */
-.navbar {
-  background-color: #003366 !important; /* Dark blue background */
-  padding: 10px 0;
-}
-
-/* Hide social icons on tablets & mobile outside the navbar */
-@media (max-width: 992px) {
-  .navbar-icons {
-    display: none !important;
-  }
-}
-
-/* Ensure mobile social icons are visible inside dropdown */
-.mobile-social-icons {
-  padding-top: 10px;
-}
-
-.mobile-social-icons a {
-  font-size: 20px;
-  color: #fdfdfd; /* Adjust color */
-  transition: color 0.3s ease-in-out;
-}
-
-.mobile-social-icons a:hover {
-  color: #ffcc00; /* Change color on hover */
-}
-
-/* Ensure proper spacing in the dropdown menu */
-.navbar-nav {
-  text-align: center;
-}
-
-
-/* Adjust Sections for Tablets */
-@media (max-width: 992px) {
-  
-  .section-title {
-    font-size: 2rem; /* Adjust heading size */
-  }
-
-  .section-subtitle {
-    font-size: 1.1rem;
-  }
-
-  .feature-box {
-    padding: 20px; /* Reduce padding on feature cards */
-  }
-
-  .feature-icon {
-    font-size: 35px; /* Adjust icon size */
-  }
-}
-
-/* Adjust Service Section Layout for Mobile */
-@media (max-width: 768px) {
-  .services .row {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .service-box {
-    width: 90%;
-    margin-bottom: 20px;
-  }
-
-  .service-icon {
-    font-size: 40px; /* Adjust icon size */
-  }
-}
-
-
-
-
-/* Contact Section Adjustments */
-@media (max-width: 768px) {
-  .contact-info {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-
-  .contact-box {
-    padding: 15px;
-  }
-
-  .contact-form {
-    padding: 20px;
-  }
-
-  .contact-form button {
-    font-size: 1rem;
-  }
-}
-
-/* Footer Adjustments */
-@media (max-width: 768px) {
-  .navbar-icons {
-    display: none; /* Hides social icons in mobile view */
-  }
-
-  footer {
-    text-align: center;
-    padding: 20px;
-  }
-
-  footer a {
-    display: block; /* Stack footer links */
-    margin-bottom: 5px;
-  }
-}
-
-
