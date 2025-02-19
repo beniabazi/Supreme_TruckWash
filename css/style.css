@@ -351,21 +351,6 @@ header,
   to { opacity: 1; }
 }
 
-
-
-@media (max-width: 768px) {
-  .navbar:not(.top-nav-collapse) {
-    background-color: #1E3A5F;
-  
-  }
-}
-
-@media (min-width: 800px) and (max-width: 850px) {
-  .navbar:not(.top-nav-collapse) {
-    background-color: #1E3A5F;
-  }
-}
-
 /* Buttons */
 .btn-primary {
   background-color: #1E3A5F;
@@ -392,3 +377,120 @@ footer a:hover {
   color: #FFFFFF;
   text-decoration: none;
 }
+
+
+/* Responsive Navbar */
+@media (max-width: 992px) {
+  .navbar {
+    padding: 5px 0; /* Reduce navbar height on smaller screens */
+  }
+
+  .navbar-brand img {
+    max-height: 35px; /* Adjust logo size for mobile */
+  }
+
+  .navbar-nav {
+    flex-direction: column; /* Stack menu items vertically on smaller screens */
+    text-align: center;
+  }
+
+  .navbar-icons {
+    margin-top: 10px; /* Add spacing between nav links and social icons */
+  }
+}
+
+/* Hero Section - Adjust Height for Smaller Screens */
+@media (max-width: 768px) {
+  .hero-section {
+    height: 60vh; /* Reduce height for mobile */
+    padding: 40px 20px;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-btn {
+    padding: 10px 25px;
+    font-size: 1rem;
+  }
+
+  .hero-logo {
+    max-width: 250px; /* Reduce logo size */
+  }
+}
+
+/* Adjust Sections for Tablets */
+@media (max-width: 992px) {
+  .section-title {
+    font-size: 2rem; /* Adjust heading size */
+  }
+
+  .section-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .feature-box {
+    padding: 20px; /* Reduce padding on feature cards */
+  }
+
+  .feature-icon {
+    font-size: 35px; /* Adjust icon size */
+  }
+}
+
+/* Adjust Service Section Layout for Mobile */
+@media (max-width: 768px) {
+  .services .row {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .service-box {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .service-icon {
+    font-size: 40px; /* Adjust icon size */
+  }
+}
+
+/* Contact Section Adjustments */
+@media (max-width: 768px) {
+  .contact-info {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .contact-box {
+    padding: 15px;
+  }
+
+  .contact-form {
+    padding: 20px;
+  }
+
+  .contact-form button {
+    font-size: 1rem;
+  }
+}
+
+/* Footer Adjustments */
+@media (max-width: 768px) {
+  footer {
+    text-align: center;
+    padding: 20px;
+  }
+
+  footer a {
+    display: block; /* Stack footer links */
+    margin-bottom: 5px;
+  }
+}
+
+
