@@ -44,13 +44,6 @@ header,
 }
 
 /* Hero Section Background */
-.view {
-  background: url(/img/truck_wash1.png) no-repeat center center;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-}
 
 /* Navbar Styling */
 .top-nav-collapse {
